@@ -21,6 +21,11 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
+            {/* <img
+              className='logo'
+              src={process.env.PUBLIC_URL + '/Logo.png'}
+              alt='logo'
+            /> */}
             <Navbar.Brand>The Artsy.Co</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
