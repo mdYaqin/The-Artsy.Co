@@ -21,6 +21,8 @@ export default function SupportScreen() {
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
+  console.log(userInfo, 'USER>>>>')
+
   useEffect(() => {
     if (uiMessagesRef.current) {
       uiMessagesRef.current.scrollBy({

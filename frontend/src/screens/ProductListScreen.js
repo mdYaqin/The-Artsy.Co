@@ -38,6 +38,8 @@ const ProductListScreen = ({ history, match }) => {
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
+  console.log(userInfo, 'USER::::::')
+
   useEffect(() => {
     dispatch({ type: PRODUCT_CREATE_RESET })
 

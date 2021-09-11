@@ -31,10 +31,10 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    brand: {
-      type: String,
-      required: true,
-    },
+    // brand: {
+    //   type: String,
+    //   required: true,
+    // },
     category: {
       type: String,
       required: true,

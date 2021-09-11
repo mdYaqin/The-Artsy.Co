@@ -1,13 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useSelector } from 'react-redux'
 import socketIOClient from 'socket.io-client'
+import { chat } from 'react-bootstrap-icons'
 
 const ENDPOINT =
   window.location.host.indexOf('localhost') >= 0
     ? 'http://127.0.0.1:5000'
     : window.location.host
 
-export default function ChatBox(props) {
-  const { userInfo } = props
+export default function ChatBox() {
+  const userLogin = useSelector((state) => state.userLogin)
+  const { userInfo } = userLogin
   const [socket, setSocket] = useState(null)
   const uiMessagesRef = useRef(null)
   const [isOpen, setIsOpen] = useState(false)
@@ -66,14 +69,14 @@ export default function ChatBox(props) {
     <div className='chatbox'>
       {!isOpen ? (
         <button type='button' onClick={supportHandler}>
-          <i className='fa fa-support' />
+          <i className='fa fa-life-ring' aria-hidden='true'></i>
         </button>
       ) : (
         <div className='card card-body'>
           <div className='row'>
             <strong>Support </strong>
             <button type='button' onClick={closeHandler}>
-              <i className='fa fa-close' />
+              <i class='fa fa-times' aria-hidden='true'></i>{' '}
             </button>
           </div>
           <ul ref={uiMessagesRef}>

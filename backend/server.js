@@ -7,7 +7,7 @@ import colors from 'colors'
 import morgan from 'morgan'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
-
+import cors from 'cors'
 import productRoutes from './routes/productRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(express.json())
+app.use(cors())
 
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
@@ -79,7 +80,7 @@ io.on('connection', (socket) => {
       socketId: socket.id,
       messages: [],
     }
-    const exitUser = users.find((x) => x._id === updateUser._id)
+    const existUser = users.find((x) => x._id === updateUser._id)
     if (existUser) {
       existUser.socketId = socket.id
       existUser.online = true
@@ -89,7 +90,7 @@ io.on('connection', (socket) => {
     console.log('Online', user.name)
     const admin = users.find((x) => x.isAdmin && x.online)
     if (admin) {
-      io.to(admin.socketId).emit('updateUser', updatedUser)
+      io.to(admin.socketId).emit('updateUser', updateUser)
     }
     if (updateUser.isAdmin) {
       io.to(updateUser.socketId).emit('listUser', users)
@@ -125,14 +126,14 @@ io.on('connection', (socket) => {
     }
   })
 })
-// httpServer.listen(port, () => {
-//   console.log(
-//     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
-//   )
-// })
-app.listen(
-  PORT,
+httpServer.listen(PORT, () => {
   console.log(
     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
   )
-)
+})
+// app.listen(
+//   PORT,
+//   console.log(
+//     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
+//   )
+// )
