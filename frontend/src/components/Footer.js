@@ -14,7 +14,10 @@ const Footer = () => {
             <div className='container'>
               <div className='row'>
                 <div className='col-md-3 col-sm-6'></div>
-                <div className='col-md-3 col-sm-6'></div>
+                <div className='col-md-3 '>
+                  <i class='fab fa-cc-paypal fa-3x'></i>
+                </div>
+
                 <div className='col-md-3 col-sm-6'>
                   {userInfo && !userInfo.isAdmin && <ChatBox />}
                 </div>
