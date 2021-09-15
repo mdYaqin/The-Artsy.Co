@@ -69,7 +69,7 @@ export default function ChatBox() {
     <div className='chatbox'>
       {!isOpen ? (
         <button type='button' onClick={supportHandler}>
-          <i className='fa fa-life-ring' aria-hidden='true'></i>
+          <i class='fas fa-comment fa-2x' aria-hidden='true'></i>
         </button>
       ) : (
         <div className='card card-body'>
