@@ -29,7 +29,7 @@ const Header = () => {
           <LinkContainer to='/'>
             <Navbar.Brand>
               <img className='logo' src='/images/logo.png' alt='logo' />
-              The Artsy.Co
+              <span className='brand'>The Artsy.Co</span>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />

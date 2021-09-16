@@ -18,6 +18,7 @@ const Footer = () => {
                 </div>
 
                 <div className='col-4'>
+                  <h4 className='text-primary'>Get in touch</h4>
                   <div className='row'>
                     <div>
                       <div className=''>
@@ -25,7 +26,7 @@ const Footer = () => {
                         &nbsp; Sembawang, Singapore
                       </div>
                       <div className=''>
-                        <i className='fas fa-mobile-alt mt-2'></i> &nbsp;
+                        <i className='fas fa-mobile-alt mt-2'></i> &nbsp; +(65)
                         86619154
                       </div>
                       <div className=''>
@@ -36,7 +37,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className='col-4'>
-                  <h4>About The Company</h4>
+                  <h4 className='text-primary'>About The Company</h4>
                   <p>
                     The Artsy.Co provide an easy way for customers to choose
                     stickers from all sizes and with all levels of printing

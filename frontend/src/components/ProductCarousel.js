@@ -21,16 +21,16 @@ const ProductCarousel = () => {
   ) : error ? (
     <Message variant='danger'>{error}</Message>
   ) : (
-    <Carousel pause='hover' className='carousel-control-color: green'>
+    <Carousel pause='hover' className='carousel-control-color: green '>
       {products.map((product) => (
         <Carousel.Item key={product._id}>
           <Link to={`/product/${product._id}`}>
-            <Image src={product.image} alt={product.name} fluid />
+            <Image src='/images/banner.png' alt={product.name} />
             <Carousel.Caption className='carousel-caption'>
-              <h2>
-                Popular Products
+              {/* <h2>
+                Welcome to The Artsy!
                 {/* {product.name} (${product.price}) */}
-              </h2>
+              {/* </h2> */}
             </Carousel.Caption>
           </Link>
         </Carousel.Item>
