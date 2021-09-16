@@ -22,15 +22,15 @@ const Footer = () => {
                   <div className='row'>
                     <div>
                       <div className=''>
-                        <i className='fas fa-map-marker-alt  mt-2'></i>
+                        <i className='fas fa-map-marker-alt  mt-2 text-primary'></i>
                         &nbsp; Sembawang, Singapore
                       </div>
                       <div className=''>
-                        <i className='fas fa-mobile-alt mt-2'></i> &nbsp; +(65)
-                        86619154
+                        <i className='fas fa-mobile-alt mt-2 text-primary'></i>
+                        &nbsp; +(65) 86619154
                       </div>
                       <div className=''>
-                        <i className='fas fa-envelope mt-2'></i>
+                        <i className='fas fa-envelope mt-2 text-primary'></i>
                         &nbsp; maryam.artsy.co@gmail.com
                       </div>
                     </div>
@@ -50,12 +50,12 @@ const Footer = () => {
                           href='http://instagram.com/the.artsy.co/'
                           target='_blank'
                         >
-                          <i className='fab fa-instagram fa-2x '></i>
+                          <i className='fab fa-instagram fa-2x text-primary'></i>
                         </a>
                       </li>
                       <li>
                         <a href='http://github.com/mdYaqin/' target='_blank'>
-                          <i className='fab fa-github fa-2x '></i>
+                          <i className='fab fa-github fa-2x text-primary'></i>
                         </a>
                       </li>
                     </ul>

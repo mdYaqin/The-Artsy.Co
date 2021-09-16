@@ -24,15 +24,15 @@ const ProductCarousel = () => {
     <Carousel pause='hover' className='carousel-control-color: green '>
       {products.map((product) => (
         <Carousel.Item key={product._id}>
-          <Link to={`/product/${product._id}`}>
-            <Image src='/images/banner.png' alt={product.name} />
-            <Carousel.Caption className='carousel-caption'>
-              {/* <h2>
+          {/* <Link to={`/product/${product._id}`}> */}
+          <Image src='/images/banner.png' alt={product.name} />
+          <Carousel.Caption className='carousel-caption'>
+            {/* <h2>
                 Welcome to The Artsy!
                 {/* {product.name} (${product.price}) */}
-              {/* </h2> */}
-            </Carousel.Caption>
-          </Link>
+            {/* </h2> */}
+          </Carousel.Caption>
+          {/* </Link> */}
         </Carousel.Item>
       ))}
     </Carousel>

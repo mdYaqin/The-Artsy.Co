@@ -66,10 +66,10 @@ export default function ChatBox() {
     setIsOpen(false)
   }
   return (
-    <div className='chatbox'>
+    <div className='chatbox btn btn-primary'>
       {!isOpen ? (
         <button type='button' onClick={supportHandler}>
-          <i class='fas fa-comment fa-2x' aria-hidden='true'></i>
+          <i className='fas fa-comment fa-2x' aria-hidden='true'></i>
         </button>
       ) : (
         <div className='card card-body'>
