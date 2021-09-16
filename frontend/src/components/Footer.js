@@ -12,37 +12,66 @@ const Footer = () => {
         <footer className='mainfooter' role='contentinfo'>
           <div className='footer-middle'>
             <div className='container'>
-              <div className='row'>
-                <div className='col-md-3 col-sm-6'></div>
-                <div className='col-md-3 '>
-                  <i class='fab fa-cc-paypal fa-3x'></i>
-                </div>
-
-                <div className='col-md-3 col-sm-6'>
+              <div className='row justify-content-around'>
+                <div className='chatbox'>
                   {userInfo && !userInfo.isAdmin && <ChatBox />}
                 </div>
-                <div className='col-md-3'>
-                  <h4>Follow Us</h4>
-                  <ul className='social-network social-circle'>
-                    <a
-                      href='http://instagram.com/the.artsy.co/'
-                      target='_blank'
-                    >
-                      <i className='fab fa-instagram fa-3x'></i>
-                    </a>
-                  </ul>
-                </div>
-              </div>
 
-              <div className='row'>
-                <div className='col-md-12 copy'>
-                  <p className='text-center'>
-                    &copy; Copyright 2021 - The Artsy.Co. All rights reserved.
+                <div className='col-4'>
+                  <div className='row'>
+                    <div>
+                      <div className=''>
+                        <i className='fas fa-map-marker-alt  mt-2'></i>
+                        &nbsp; Sembawang, Singapore
+                      </div>
+                      <div className=''>
+                        <i className='fas fa-mobile-alt mt-2'></i> &nbsp;
+                        86619154
+                      </div>
+                      <div className=''>
+                        <i className='fas fa-envelope mt-2'></i>
+                        &nbsp; maryam.artsy.co@gmail.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-4'>
+                  <h4>About The Company</h4>
+                  <p>
+                    The Artsy.Co provide an easy way for customers to choose
+                    stickers from all sizes and with all levels of printing
+                    knowledge to order online.
                   </p>
+                  <div className='row'>
+                    <ul className='social-network social-circle'>
+                      <li>
+                        <a
+                          href='http://instagram.com/the.artsy.co/'
+                          target='_blank'
+                        >
+                          <i className='fab fa-instagram fa-2x '></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='http://github.com/mdYaqin/' target='_blank'>
+                          <i className='fab fa-github fa-2x '></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div className='row'>
+              <div className='col-md-12 copy'>
+                <p className='text-center'>
+                  &copy; Copyright 2021 - The Artsy.Co. All rights reserved.
+                </p>
+              </div>
+            </div>
           </div>
+          {/* </div> */}
         </footer>
 
         {/* <Row>

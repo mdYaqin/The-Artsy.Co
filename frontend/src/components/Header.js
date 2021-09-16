@@ -18,15 +18,19 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar
+        bg='dark'
+        variant='dark'
+        expand='lg'
+        collapseOnSelect
+        className='p-1'
+      >
         <Container>
           <LinkContainer to='/'>
-            {/* <img
-              className='logo'
-              src={process.env.PUBLIC_URL + '/Logo.png'}
-              alt='logo'
-            /> */}
-            <Navbar.Brand>The Artsy.Co</Navbar.Brand>
+            <Navbar.Brand>
+              <img className='logo' src='/images/logo.png' alt='logo' />
+              The Artsy.Co
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
