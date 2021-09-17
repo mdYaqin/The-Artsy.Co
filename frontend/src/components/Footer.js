@@ -39,7 +39,7 @@ const Footer = () => {
                 <div className='col-4'>
                   <h4 className='text-primary'>About The Company</h4>
                   <p>
-                    The Artsy.Co provide an easy way for customers to choose
+                    The Artsy.co provide an easy way for customers to choose
                     stickers from all sizes and with all levels of printing
                     knowledge to order online.
                   </p>
