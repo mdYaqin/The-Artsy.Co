@@ -27,7 +27,7 @@ const Header = () => {
       >
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>
+            <Navbar.Brand className=''>
               <img className='logo' src='/images/logo.png' alt='logo' />
               <span className='brand'>The Artsy.Co</span>
             </Navbar.Brand>
@@ -36,11 +36,14 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ms-auto'>
-              <LinkContainer to='/cart'>
-                <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i> Cart
-                </Nav.Link>
-              </LinkContainer>
+              {!userInfo?.isAdmin && (
+                <LinkContainer to='/cart'>
+                  <Nav.Link>
+                    <i className='fas fa-shopping-cart'></i> Cart
+                  </Nav.Link>
+                </LinkContainer>
+              )}
+
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
