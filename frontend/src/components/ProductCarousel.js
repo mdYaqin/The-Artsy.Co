@@ -25,7 +25,11 @@ const ProductCarousel = () => {
       {products.map((product) => (
         <Carousel.Item key={product._id}>
           {/* <Link to={`/product/${product._id}`}> */}
-          <Image className='d-block w-70' src='/images/logo.png' alt='Banner' />
+          <Image
+            className='d-block w-70'
+            src='/images/Banner.png'
+            alt='Banner'
+          />
           <Carousel.Caption className='carousel-caption'>
             {/* <h2>
                 Welcome to The Artsy!
