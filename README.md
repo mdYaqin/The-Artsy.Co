@@ -28,7 +28,7 @@ The intent of the site is to provide an online p2p marketplace for users to choo
 * Paypal
 
 
-![homepage-1](https://user-images.githubusercontent.com/79918648/127741343-c367b6a6-3783-44ff-9dd1-5604bbc84a1b.jpg)
+<!-- ![homepage-1](https://user-images.githubusercontent.com/79918648/127741343-c367b6a6-3783-44ff-9dd1-5604bbc84a1b.jpg) 
 
 
 #### List of Errands at the homepage
@@ -39,7 +39,7 @@ The intent of the site is to provide an online p2p marketplace for users to choo
 
 *  New User can see lists of errands posted at the Homepage
 * Clicking on a picture on the homepage, will go to the individual Errand's page, which will have a full description of the errand, location maps as well as the seller's ratings and reviews from past transactions.
-![show](https://user-images.githubusercontent.com/79918648/127741411-abf05d77-4f6c-4356-b1ae-797af26e2f02.jpg)
+![show](https://user-images.githubusercontent.com/79918648/127741411-abf05d77-4f6c-4356-b1ae-797af26e2f02.jpg) -->
 
 
 
