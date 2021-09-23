@@ -43,7 +43,7 @@ The intent of the site is to provide an online p2p marketplace for users to choo
 
 
 
-*  After successful login/register , User can accept these errands. Users can also like the errands ( the Hearts at the bottom of each card ) which they want to shortlist or actually like. When liked, it will be under the user's likes and it will be reflected in his dashboard so that he can refer to his likes to go back to any errands that he previously liked. 
+<!-- *  After successful login/register , User can accept these errands. Users can also like the errands ( the Hearts at the bottom of each card ) which they want to shortlist or actually like. When liked, it will be under the user's likes and it will be reflected in his dashboard so that he can refer to his likes to go back to any errands that he previously liked.  
 ![dashboard](https://user-images.githubusercontent.com/79918648/127741430-11ce0c9b-22af-4a59-8252-a11620c57bc3.jpg)
 
 
@@ -54,7 +54,7 @@ The intent of the site is to provide an online p2p marketplace for users to choo
 
 * User can also created their own errands for acceptance. When creating these errands, they will have to pay upfront the cost of the errand as well as the actual costs of the items (if any). The payment uses stripe gateway and upon successful payment, it will be reflected in their wallet. These errands will also be reflected in their dashboard for easy reference. 
 ![Walk-dog](https://user-images.githubusercontent.com/79918648/127741805-fc76e5ab-bfd2-4de6-85bd-22e78c0b42dd.jpg)
-![stripe](https://user-images.githubusercontent.com/79918648/127741809-1db72f8c-6003-4de2-88fc-43085eaf7ff6.jpg)
+![stripe](https://user-images.githubusercontent.com/79918648/127741809-1db72f8c-6003-4de2-88fc-43085eaf7ff6.jpg) -->
 
 *  Upon completion of errand, the amount of the whole errand is transferred from the seller's wallet to the buddy's wallet. An email is sent to both user and buddy. This uses nodemailer. 
 * User can then submit review and ratings of the other user which will be reflected in user's dashboard.
