@@ -56,21 +56,24 @@ The intent of the site is to provide an online p2p marketplace for users to choo
 ![Walk-dog](https://user-images.githubusercontent.com/79918648/127741805-fc76e5ab-bfd2-4de6-85bd-22e78c0b42dd.jpg)
 ![stripe](https://user-images.githubusercontent.com/79918648/127741809-1db72f8c-6003-4de2-88fc-43085eaf7ff6.jpg) -->
 
-*  Upon completion of errand, the amount of the whole errand is transferred from the seller's wallet to the buddy's wallet. An email is sent to both user and buddy. This uses nodemailer. 
-* User can then submit review and ratings of the other user which will be reflected in user's dashboard.
+## App Features
+
+*  New User can see lists of products posted at the Homepage
+* Clicking on a pproducts on the homepage, will go to the individual product's page, which will have a full description of the product, price as well as the products's ratings and reviews from past transactions.
+* User can then submit review and ratings of the purchased products.
 
 
 #### Layout of website
-* Bootstap and material ui frameworks were used to complement the css.
-* The website was made to be mobile friendly (in progress).
+* Bootstap and Bootswatch theme were used to complement the css.
+* The website was made to be mobile friendly.
 
 #### Authentication
 * Authentication is done by using jsonwebtoken and localstorage stores the token for authenticating the client side routes, where needed.
-* Reset password uses jsonwebtoken to send a link, through nodemailer, that is valid for a short period of time.
+
 
 #### Uploading of files
-Images are uploaded to cloudinary using multer and streamify, so as to minimise any local disk storage: https://cloudinary.com/blog/node_js_file_upload_to_a_local_server_or_to_the_cloud
-* A cloudinary id was included in errand schemas to faciliate the deletion of previous images whenever there is an update to the image or the errand is deleted.
+* Images are uploaded using multer 
+
 
 # Suggestions and Improvements
 Will appreciate any suggestions and improvements to the code, layout, user interface or even the basic idea itself. Thank you. 
