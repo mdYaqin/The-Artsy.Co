@@ -75,18 +75,18 @@ Images are uploaded to cloudinary using multer and streamify, so as to minimise 
 # Suggestions and Improvements
 Will appreciate any suggestions and improvements to the code, layout, user interface or even the basic idea itself. Thank you. 
 
-## Wireframes
+<!-- ## Wireframes 
 <img src=https://github.com/MichaelKalamogan/Errand-Buddy-Frontend/blob/yaqin10/errand-buddy-fe/public/Readme/Wireframe1.jpeg width="500" height="400">
 <img src=https://github.com/MichaelKalamogan/Errand-Buddy-Frontend/blob/yaqin10/errand-buddy-fe/public/Readme/Wireframe2.jpeg width="500" height="400">
-<img src=https://github.com/MichaelKalamogan/Errand-Buddy-Frontend/blob/yaqin10/errand-buddy-fe/public/Readme/Wireframe3.jpeg width="500" height="400">
+<img src=https://github.com/MichaelKalamogan/Errand-Buddy-Frontend/blob/yaqin10/errand-buddy-fe/public/Readme/Wireframe3.jpeg width="500" height="400"> -->
 
 ## Area of Improvements
 
-* Components in the dashboard page could further broken into several components
+* Products in the homepage can be broken into a sub product with the main categories card on the Home page
 * The styling could be improved further
 * Web app to be responsive e.g. mobile, tablet etc
 
-## Credits
-Images were taken from: https://www.dreamstime.com/
+<!-- ## Credits 
+Images were taken from: https://www.dreamstime.com/ -->
 
 
